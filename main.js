@@ -5,11 +5,13 @@ let header = document.querySelector(".header");
 let links = document.querySelector(".style-header");
 let txtArea = document.querySelector("textarea");
 let span = document.querySelector(".count-text");
+let inside_area = document.querySelector(".inside-area");
+
 
 window.onscroll = function () {
-    if(window.scrollY >= 640){
+    if (window.scrollY >= 640) {
         btn.style.display = "block";
-    }else {
+    } else {
         btn.style.display = "none";
     }
 }
@@ -23,5 +25,14 @@ btn.onclick = function () {
 }
 
 txtArea.oninput = function () {
-    span.textContent = `${txtArea.value.length}/100`;
+    span.textContent = `${txtArea.value.length}`;
+    inside_area.style.width = `${txtArea.value.length}%`;
+
+
+    if (inside_area.style.width === "100%") {
+        inside_area.style.backgroundColor = `teal`;
+        setTimeout(() => {
+            inside_area.style.opacity = `0`;
+        }, 2000);
+    }
 }

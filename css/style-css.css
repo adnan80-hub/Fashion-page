@@ -20,9 +20,11 @@ body {
 a {
     text-decoration: none !important;
 }
+
 ul {
-    list-style: none!important;
+    list-style: none !important;
 }
+
 input {
     display: none;
 }
@@ -232,7 +234,7 @@ input {
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    border: 2px solid #fff; 
+    border: 2px solid #fff;
     background-color: #fff;
     outline: 2px solid #000;
     display: grid;
@@ -240,9 +242,11 @@ input {
     margin-right: 18px;
     z-index: 1;
 }
+
 .about-us .steps ul li .ink-pen {
     padding: 0 7px;
 }
+
 .steps ul li .info span {
     font-size: 17px;
 }
@@ -295,11 +299,13 @@ input {
     width: 60px;
     height: 60px;
 }
+
 /* end-categories */
 /* start video */
 .video {
     position: relative;
 }
+
 .video::before {
     content: "";
     position: absolute;
@@ -309,10 +315,12 @@ input {
     height: 99%;
     background-color: rgb(0 0 0 / 40%);
 }
+
 .video video {
     width: 70%;
     border-radius: 12px;
 }
+
 .video .title-video {
     position: absolute;
     top: 50%;
@@ -321,43 +329,52 @@ input {
     padding: 50px;
     text-align: center;
 }
+
 .title-video h2 {
     margin-bottom: 15px;
     letter-spacing: 2px;
 }
+
 .title-video p {
     font-size: 15px;
     margin-bottom: 20px;
 }
+
 .title-video a {
     border: 1px solid #fff;
     padding: 10px 25px;
 }
+
 /* end video */
 /* start-testimonals */
 .testimonals .testimo {
-    border: 1px solid  rgb(0 0 0 / 25%);
+    border: 1px solid rgb(0 0 0 / 25%);
 }
+
 .testimonals .testimo img {
     width: 45px;
     height: 45px;
-    object-fit: cover; 
+    object-fit: cover;
     border-radius: 50%;
 }
+
 /* end-testimonals */
 /* start compnies */
 .companies h2 {
     margin-bottom: 5rem;
 }
+
 .companies img {
     width: 200px;
     opacity: .3;
 }
+
 /* end compnies */
 /* start contact */
 .contact-us {
     background-color: #aaaaaa1c;
 }
+
 .contact-us textarea {
     resize: none;
     height: 200px;
@@ -367,60 +384,82 @@ input {
     border: 1px solid #aaa;
     border-radius: 6px;
 }
+
 .contact-us textarea[placeholder="type here ..."]::placeholder {
     transition: .4s;
 }
+
 .contact-us textarea[placeholder="type here ..."]:focus::placeholder {
     opacity: 0;
 }
+
 .contact-us textarea:focus {
     color: #191919;
 }
+
 .contact-us span {
     padding: 15px 20px;
     border-radius: 5px;
     width: fit-content;
 }
+
+.inside-area {
+    width: 0;
+    height: 15px;
+    border-radius: 30px;
+    background-color: #252525;
+    transition: 0.5s;
+}
+
 /* end contact */
 /* start footer */
 .footer {
     padding: 20px 0;
     background-color: #000;
 }
+
 .footer h2 {
     font-size: 21px;
     letter-spacing: 2px;
     font-weight: bold;
 }
+
 .social-f i {
     font-size: 19px;
 }
+
 .social-f i:not(:last-of-type) {
     margin-right: 20px;
 
 }
+
 /* end footer */
 /* start-login */
 .login {
     display: flex;
 }
+
 @media (max-width: 767px) {
     .login {
         flex-direction: column;
     }
 }
-.login .img-login ,
+
+.login .img-login,
 .login .txt-login {
     width: 50%;
     height: 100vh;
 }
+
 @media (max-width: 767px) {
-    .login .img-login ,
+
+    .login .img-login,
     .login .txt-login {
-    width: 100%;
-    height: 70vh;
+        width: 100%;
+        height: 70vh;
+    }
 }
-}
+
 .login .img-login .fashimg-login {
     background-image: url("../assets/images/dami-adebayo-k6aQzmIbR1s-unsplash.jpg");
     background-size: cover;
@@ -429,6 +468,7 @@ input {
     height: 100%;
     position: relative;
 }
+
 .fashimg-login::before {
     content: "";
     position: absolute;
@@ -438,6 +478,7 @@ input {
     height: 100%;
     background-color: rgb(0 0 0 / 95%);
 }
+
 .fashimg-login h1 {
     position: absolute;
     z-index: 3;
@@ -445,9 +486,11 @@ input {
     letter-spacing: 10px;
     font-size: 80px;
 }
+
 .txt-login h2 {
     color: #232323;
 }
+
 .txt-login ul li a {
     width: 300px;
     border: 2px solid #EEE;
@@ -455,6 +498,7 @@ input {
     border-radius: 3px;
     position: relative;
 }
+
 .txt-login ul li a::before {
     content: "";
     position: absolute;
@@ -465,15 +509,19 @@ input {
     transition: 0.3s;
     z-index: -1;
 }
+
 .txt-login ul li a:hover::before {
     height: 100%;
 }
+
 .txt-login ul li .go::before {
     background-color: #dd4b39;
 }
+
 .txt-login ul li .face::before {
     background-color: #1877f2;
 }
+
 .txt-login ul li .insta::before {
     background-color: #000;
 }
@@ -481,31 +529,38 @@ input {
 .txt-login ul li:not(:last-of-type) {
     margin-bottom: 10px;
 }
+
 .txt-login ul li a i {
     font-size: 17px;
     margin-right: 10px;
     transition: 0.3s;
 }
+
 .txt-login ul li a:hover i {
-    color: #fff!important;
+    color: #fff !important;
 }
+
 .txt-login ul li a span {
-    font-size: 14px; 
+    font-size: 14px;
     transition: 0.3s;
 }
+
 .txt-login ul li a:hover span {
-    color: #fff!important;
+    color: #fff !important;
 }
 
 .txt-login ul li a .google {
     color: #dd4b39;
 }
+
 .txt-login ul li a .facebook {
     color: #1877f2;
 }
+
 .txt-login ul li a .instagram {
     color: #000;
 }
+
 .txt-login .promotion {
     width: 300px;
 }
@@ -516,6 +571,7 @@ input {
     padding-left: 30px;
     position: relative;
 }
+
 .txt-login .promotion label::before {
     content: "";
     position: absolute;
@@ -526,6 +582,7 @@ input {
     border: 2px solid #DDD;
     border-radius: 3px;
 }
+
 .txt-login .promotion label::after {
     content: "\f00c";
     font-family: var(--fa-style-family-classic);
@@ -544,9 +601,11 @@ input {
     transform: scale(0) rotate(360deg);
     transition: 0.3s;
 }
-#check-login:checked + label::after {
+
+#check-login:checked+label::after {
     transform: scale(1);
 }
+
 /* end-login */
 /* start-animation */
 @keyframes change-color {
@@ -558,6 +617,7 @@ input {
         transform: translateY(30px);
     }
 }
+
 /* end-animation */
 
 button {
