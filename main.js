@@ -6,7 +6,7 @@ let links = document.querySelector(".style-header");
 let txtArea = document.querySelector("textarea");
 let span = document.querySelector(".count-text");
 let inside_area = document.querySelector(".inside-area");
-
+let send_message = document.querySelector(".sending-message");
 
 window.onscroll = function () {
     if (window.scrollY >= 640) {
@@ -36,3 +36,14 @@ txtArea.oninput = function () {
         }, 2000);
     }
 }
+
+send_message.addEventListener("click", function () {
+    let blob = new Blob([txtArea.value], {
+        type: "text/plain",
+    })
+
+    let link_a = document.createElement("a");
+    link_a.download = "message.txt";
+    link_a.href = URL.createObjectURL(blob);
+    link_a.click();
+})

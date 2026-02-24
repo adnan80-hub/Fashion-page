@@ -401,6 +401,7 @@ input {
     padding: 15px 20px;
     border-radius: 5px;
     width: fit-content;
+    cursor: pointer;
 }
 
 .inside-area {
